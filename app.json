@@ -1,0 +1,31 @@
+{
+  "name": "Website-Clinton",
+  "description": "",
+  "keywords": [
+    "Web"
+  ],
+
+  "success_url": "https://clinton96.herokuapp.com",
+  "website": "https://github.com/Franklin-Graham",
+  "repository": "https://github.com/Franklin-Graham/Website-Clinton",
+
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
